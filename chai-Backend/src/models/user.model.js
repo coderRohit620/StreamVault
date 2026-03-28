@@ -25,7 +25,7 @@ const userSchema = new Schema(
             trim:true,
             index:true,
         },
-        avtar:{
+        avatar:{
             type:String, //cloudinary url
             required:true,
         },
@@ -51,10 +51,26 @@ const userSchema = new Schema(
     }
 )
 
-userSchema.pre("save", async function(next) {
-    if(!this.isModified("password")) return next();
+// userSchema.pre("save", async function(next) {
+//     if(!this.isModified("password")) return next();
+//     this.password = await bcrypt.hash(this.password, 10)
+//     next()
+// })
+
+// we can use this when use next
+// userSchema.pre("save", function(next) {
+//     if (!this.isModified("password")) return next();
+
+//     bcrypt.hash(this.password, 10).then(hash => {
+//         this.password = hash;
+//         next();
+//     });
+// });
+
+
+userSchema.pre("save", async function() {
+    if(!this.isModified("password")) return;
     this.password = await bcrypt.hash(this.password, 10)
-    next()
 })
 
 
