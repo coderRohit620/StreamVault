@@ -9,6 +9,11 @@ const getVideoComments = asyncHandler(async (req, res) => {
     const {videoId} = req.params
     const {page = 1, limit = 10} = req.query
 
+    if(!videoId){
+        throw new ApiError(400,"Video Id is required")
+    }
+
+    
 })
 
 const addComment = asyncHandler(async (req, res) => {
@@ -27,5 +32,5 @@ export {
     getVideoComments, 
     addComment, 
     updateComment,
-     deleteComment
+    deleteComment
     }
