@@ -21,11 +21,11 @@ import userRouter from "./routes/user.routes.js";
 import commentRouter from "./routes/comment.routes.js"
 import videoRouter from "./routes/video.routes.js"
 import dashRouter from "./routes/dashboard.routes.js"
-import healthRouter from "./routes/dashboard.routes.js"
-import likeRouter from "./routes/dashboard.routes.js"
+import healthRouter from "./routes/healthcheck.routes.js"
+import likeRouter from "./routes/like.routes.js"
 import paylistRouter from "./routes/playlist.routes.js"
-import subscripRouter from "./routes/dashboard.routes.js"
-import tweetRouter from "./routes/dashboard.routes.js"
+import subscripRouter from "./routes/subscription.routes.js"
+import tweetRouter from "./routes/tweet.routes.js"
 
 
 
