@@ -2,7 +2,6 @@
 
 StreamVault is a robust, production-ready backend API for a video-sharing and streaming platform similar to YouTube. Built using the Node.js, Express, and MongoDB ecosystem, it implements industry-standard practices, including secure JWT authentication, relational model schemas, aggregate pagination, and cloud-based file management via Multer and Cloudinary.
 
-
 ---
 
 ## 🚀 Features

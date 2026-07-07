@@ -25,7 +25,6 @@ connectDB()
 // function connectDB(){}
 // connectDB()
 
-
 /*
 import express from "express"
 ( async () => {

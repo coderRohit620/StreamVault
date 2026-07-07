@@ -28,8 +28,6 @@ import subscripRouter from "./routes/subscription.routes.js"
 import tweetRouter from "./routes/tweet.routes.js"
 
 
-
-
 // routes declaration
 // app.use("/users",userRouter)
 
